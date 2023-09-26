@@ -1,0 +1,32 @@
+#
+# Vendor Blobs for figo - ODM blobs from FIG-LX1 9.1
+#
+
+# Audio
+odm/etc/audio/algorithm/algorithm_FIGO_normal.xml
+odm/etc/audio/dts/dts_FIGO_normal.xml
+
+
+# Camera Configs
+
+
+# Camera Dependencies
+
+
+# Camera HALs
+
+# Device
+
+
+# Firmware
+
+
+# Nfc
+odm/etc/libnfc-brcm.conf
+odm/etc/libnfc-nci.conf
+odm/etc/libnfc-nxp.conf
+odm/etc/libnfc-nxp_RF.conf
+
+# TEE
+odm/ta/sign_tool_product_ta.sec
+
