@@ -27,20 +27,84 @@ odm/etc/audio/sws/sws_FIGO_normal.xml
 odm/etc/audio/volume/audio_policy_volumes.xml
 odm/etc/audio/volume/volume_point.xml
 
-
 # Camera Configs
-
+odm/etc/camera/bshutter/device.config
+odm/etc/camera/bshutter/flash.txt
+odm/etc/camera/bshutter/hi1333_figo/algo.xml
+odm/etc/camera/bshutter/hi1333_figo/info.xml
+odm/etc/camera/bshutter/imx258_figo/algo.xml
+odm/etc/camera/bshutter/imx258_figo/info.xml
+odm/etc/camera/bshutter/ov13855_figo/algo.xml
+odm/etc/camera/bshutter/ov13855_figo/info.xml
 
 # Camera Dependencies
-
+-odm/lib64/libMegviiUnlock.so
+-odm/lib64/libarcsoft_agegender_estimation.so
+-odm/lib64/libarcsoft_beautyshot.so
+-odm/lib64/libarcsoft_palm_detection.so
+-odm/lib64/libdcamera_effect.so
+-odm/lib64/libdualCamera_calibration.so
+-odm/lib64/libmegface.so
+-odm/lib64/libmeglive.so
+-odm/lib64/libmmi_depth.so
+-odm/lib64/libmpbase.so
+-odm/lib64/libmrc_cg_beauty.so
+-odm/lib64/libunlockmegcv.so
 
 # Camera HALs
+-odm/lib64/hwcam/shwcam.hi6250.FIGO.p.GC2375FIG.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.HI1333FIG_SUNNY.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.HI259FIG_SUNNY.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.HI843FIG_OFILM.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.HI843FIG_QTECH.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.IMX219FIG_LITEON.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.IMX258FIG.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.IMX486_OFILM.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.OV13855FIG_LITEON.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.p.OV8856FIG_SUNNY.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.GC2375FIG.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.HI1333FIG_SUNNY.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.HI259FIG_SUNNY.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.HI843FIG_OFILM.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.HI843FIG_QTECH.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.IMX219FIG_LITEON.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.IMX258FIG.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.IMX486_OFILM.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.OV13855FIG_LITEON.so
+-odm/lib64/hwcam/hwcam.hi6250.FIGO.s.OV8856FIG_SUNNY.so
+-odm/lib64/hwcam/hwcam.hi6250.m.FIGO.so
 
 # Device
-
+vendor/etc/cfg_fig_al00x_hisi.ini
+vendor/etc/cfg_fig_la1_hisi.ini
+vendor/etc/cfg_fig_lx1_hisi.ini
+vendor/etc/cfg_fig_lx2_hisi.ini
+vendor/etc/cfg_fig_lx3_hisi.ini
+vendor/etc/cfg_fig_tl00x_hisi.ini
 
 # Firmware
-
+odm/etc/firmware/libpn551_fw.so
+odm/etc/firmware/ts/figo_fts_figo53010_boe.img
+odm/etc/firmware/ts/figo_fts_figo53010_ebbg.img
+odm/etc/firmware/ts/figo_fts_figo53010_eely_limits.csv
+odm/etc/firmware/ts/figo_fts_figo53010_tm.img
+odm/etc/firmware/ts/figo_fts_figo53010_truly.img
+odm/etc/firmware/ts/figo_fts_figo53020_boe.img
+odm/etc/firmware/ts/figo_fts_figo53020_ebbg.img
+odm/etc/firmware/ts/figo_fts_figo53020_tm.img
+odm/etc/firmware/ts/figo_fts_figo53020_truly.img
+odm/etc/firmware/ts/figo_fts_figo53020_truly_limits.csv
+odm/etc/firmware/ts/figo_gt1x_1158.bin
+odm/etc/firmware/ts/figo_gt1x_1158_boe.bin
+odm/etc/firmware/ts/figo_gt1x_1158_ebbg.bin
+odm/etc/firmware/ts/figo_gt1x_1158_tm.bin
+odm/etc/firmware/ts/figo_gt1x_1158_truly.bin
+odm/etc/firmware/ts/figo_gt1x_figo54000_eely.img
+odm/etc/firmware/ts/figo_gt1x_figo54000_eely_limits.csv
+odm/etc/firmware/ts/figo_gt1x_figo54000_ofilm.img
+odm/etc/firmware/ts/figo_gt1x_figo54000_ofilm_limits.csv
+odm/etc/firmware/ts/figo_gt1x_figo54010_eely.img
+odm/etc/firmware/ts/figo_gt1x_figo54010_eely_limits.csv
 
 # Nfc
 odm/etc/libnfc-brcm.conf
