@@ -1,4 +1,12 @@
+on early-boot
+    service CameraDaemon /vendor/bin/CameraDaemon hi6250 FIGO
+    class main
+    user media
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm system
+    writepid /dev/cpuset/top-app/tasks /dev/stune/top-app/tasks
+
 on boot
+    setprop ro.odm.build.fingerprint ${ro.product.odm.brand}/${ro.product.odm.name}/${ro.product.odm.device}_${ro.boot.product.hardware.sku}:${ro.build.version.release}/${ro.vendor.build.id}/${ro.vendor.build.version.incremental}:${ro.vendor.build.type}/${ro.vendor.build.tags}
     chown system system /dev/ttyAMA4
     chmod 660 /dev/ttyAMA4
 
@@ -7,24 +15,18 @@ on boot
     write /sys/kernel/rcc/max_anon_clean_size 512M
     write /sys/kernel/rcc/enable 1
 
-    #disable hmp rt optimization
-    write /sys/kernel/hmp/rt_opt 0
-
 on property:sys.boot_completed=1
     write /sys/kernel/rcc/event BOOT_COMPLETE
 
 #Modemnum
+on property:ro.boot.product.hardware.sku=FIG-L11
+    setprop ro.odm.config.modem_number 1
+
+on property:ro.boot.product.hardware.sku=FIG-L01
+    setprop ro.odm.config.modem_number 1
+
+on property:ro.boot.product.hardware.sku=FIG-L02
+    setprop ro.odm.config.modem_number 1
 
 on property:ro.boot.product.hardware.sku=FIG-L03
     setprop ro.odm.config.modem_number 1
-
-on property:ro.boot.product.hardware.sku=FIG-L31
-    setprop ro.odm.config.modem_number 2
-	
-# Service add below.
-
-service CameraDaemon /vendor/bin/CameraDaemon hi6250 FIGO
-    class main
-    user media
-    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm system
-    writepid /dev/cpuset/top-app/tasks /dev/stune/top-app/tasks
