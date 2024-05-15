@@ -1,0 +1,7 @@
+#
+# vendor.prop for figo
+#
+
+# Bluetooth
+bluetooth.device.default_name=Huawei P Smart 2018#
+
