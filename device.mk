@@ -22,12 +22,14 @@ TARGET_SCREEN_DENSITY := 428
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/figo.rc:$(TARGET_COPY_OUT_ODM)/etc/init/figo.rc
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayFigo \
+    WifiResOverlayFigo
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    WifiResOverlayFigo
-
-
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
